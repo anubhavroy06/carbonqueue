@@ -1,0 +1,61 @@
+{
+  "checks": [
+    {
+      "name": "Custom dataset import labels provenance correctly",
+      "detail": "PASS"
+    },
+    {
+      "name": "Snapshot save/load/delete",
+      "detail": "PASS"
+    },
+    {
+      "name": "Named workflow save/load/delete",
+      "detail": "PASS"
+    },
+    {
+      "name": "Transactional backup replacement",
+      "detail": "PASS"
+    },
+    {
+      "name": "Invalid backup rollback preserves editor",
+      "detail": "PASS"
+    },
+    {
+      "name": "Clear-all local record reset",
+      "detail": "PASS"
+    },
+    {
+      "name": "HTTP 503 preserves explicit data mode",
+      "detail": "PASS"
+    },
+    {
+      "name": "Malformed provider data preserves explicit data mode",
+      "detail": "PASS"
+    },
+    {
+      "name": "Network timeout preserves explicit data mode",
+      "detail": "PASS"
+    },
+    {
+      "name": "Project-subpath Worker, security policy, and offline reload",
+      "detail": "PASS"
+    },
+    {
+      "name": "Manifest parses without errors",
+      "detail": "PASS"
+    },
+    {
+      "name": "192px and 512px app icons decoded",
+      "detail": "PASS"
+    },
+    {
+      "name": "Narrow/reflow layout and keyboard focus",
+      "detail": "PASS"
+    },
+    {
+      "name": "No uncaught fault-suite errors",
+      "detail": "PASS"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,71 @@
+{
+  "verifiedAt": "2026-10-11T14:51:40.549Z",
+  "url": "https://carbonqueue.pages.dev",
+  "results": [
+    {
+      "name": "Undo/redo",
+      "detail": "PASS"
+    },
+    {
+      "name": "Task duplicate/delete",
+      "detail": "PASS"
+    },
+    {
+      "name": "Resource delete/reassign/add",
+      "detail": "PASS"
+    },
+    {
+      "name": "Accessible field-level validation",
+      "detail": "PASS"
+    },
+    {
+      "name": "Explicit deadline what-if and previous snapshot",
+      "detail": "PASS"
+    },
+    {
+      "name": "Live future-only parsing and computation (mocked provider)",
+      "detail": "PASS"
+    },
+    {
+      "name": "Live in-flight/cache request restraint",
+      "detail": "PASS"
+    },
+    {
+      "name": "429, Retry-After, explicit fallback and cooldown",
+      "detail": "PASS"
+    },
+    {
+      "name": "Worker cancellation without false infeasibility",
+      "detail": "PASS"
+    },
+    {
+      "name": "Edited-input stale-result protection",
+      "detail": "PASS"
+    },
+    {
+      "name": "Malformed import preserves workspace",
+      "detail": "PASS"
+    },
+    {
+      "name": "Blocked storage: usable in-memory analysis",
+      "detail": "PASS"
+    },
+    {
+      "name": "Corrupt saved records isolated",
+      "detail": "PASS"
+    },
+    {
+      "name": "Actual browser NESO live smoke",
+      "detail": "Live GB loaded. Origin moved to 2026-10-11T15:00Z. Slot constraints are relative to this explicit new origin."
+    },
+    {
+      "name": "Hosted SW update mechanism",
+      "detail": "Local controlled update test passed; production SW install/offline separately tested, no fake production upgrade"
+    },
+    {
+      "name": "No uncaught release-browser errors",
+      "detail": "PASS"
+    }
+  ],
+  "exceptions": []
+}

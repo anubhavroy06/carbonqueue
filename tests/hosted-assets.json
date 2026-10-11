@@ -1,0 +1,81 @@
+{
+  "verifiedAt": "2026-10-11T14:52:10.555Z",
+  "url": "https://carbonqueue.pages.dev",
+  "version": "1.0.1",
+  "buildHash": "ed81c53bfabca2cd5db584afdc66c42afa72fba21b46f3fbfce460e60b3baf93",
+  "checked": [
+    {
+      "file": "LICENSE.txt",
+      "status": 200,
+      "bytes": 1281,
+      "hashMatches": true
+    },
+    {
+      "file": "app.js",
+      "status": 200,
+      "bytes": 63603,
+      "hashMatches": true
+    },
+    {
+      "file": "domain.js",
+      "status": 200,
+      "bytes": 26826,
+      "hashMatches": true
+    },
+    {
+      "file": "forecast.json",
+      "status": 200,
+      "bytes": 12091,
+      "hashMatches": true
+    },
+    {
+      "file": "icon-192.png",
+      "status": 200,
+      "bytes": 1635,
+      "hashMatches": true
+    },
+    {
+      "file": "icon-512.png",
+      "status": 200,
+      "bytes": 8421,
+      "hashMatches": true
+    },
+    {
+      "file": "icon.svg",
+      "status": 200,
+      "bytes": 346,
+      "hashMatches": true
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "bytes": 2614,
+      "hashMatches": true
+    },
+    {
+      "file": "manifest.webmanifest",
+      "status": 200,
+      "bytes": 588,
+      "hashMatches": true
+    },
+    {
+      "file": "storage.js",
+      "status": 200,
+      "bytes": 1358,
+      "hashMatches": true
+    },
+    {
+      "file": "styles.css",
+      "status": 200,
+      "bytes": 11423,
+      "hashMatches": true
+    },
+    {
+      "file": "worker.js",
+      "status": 200,
+      "bytes": 532,
+      "hashMatches": true
+    }
+  ],
+  "serviceWorkerControlled": true
+}

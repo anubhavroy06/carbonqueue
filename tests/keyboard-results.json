@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "Keyboard skip link targets main",
+    "Keyboard analysis activation retains focus",
+    "Open confirmation dialog accessibility scan: zero violations",
+    "Native modal keeps keyboard focus inside",
+    "Escape returns focus to trigger",
+    "Confirmed deletion has logical keyboard focus destination",
+    "640 CSS-pixel reflow checked (not full WCAG certification)"
+  ]
+}

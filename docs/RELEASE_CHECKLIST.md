@@ -1,6 +1,6 @@
 # Release checklist and feature/test traceability
 
-Status: **IMPLEMENTED — VERIFICATION INCOMPLETE**. No public repository or hosted URL has been created. Publication authorization/account access and anonymous hosted smoke testing remain external release gates. This is not a hackathon submission. Eligibility was confirmed by the participant; it is not being reopened.
+Status: **VERIFIED COMPLETE** for the bounded planner release. Public source and anonymous hosted verification are complete. Hackathon entry is not submitted.
 
 Domain tests execute in Node; browser tests execute against the production static build in local Chromium. JSON logs identify actual checks, not promises. No remaining application requirement is relegated to a roadmap.
 
@@ -26,21 +26,21 @@ Domain tests execute in Node; browser tests execute against the production stati
 | Accessible keyboard / mobile / charts                 | semantics, tables, labelled dialog, tab wrapping             | axe + keyboard + 390/640 pixel reflow                            |
 | Security / privacy / licenses                         | CSP, limits, escaped text, local-only workflows, MIT + CC BY | dependency audit, injection test, production CSP checks          |
 | Cost / release / demo documentation                   | docs, static-only build                                      | dependency audit; bounded workload estimates                     |
-| Actual public release                                 | **NOT VERIFIED**                                             | needs authorized hosting account and anonymous public smoke test |
+| Actual public release                                 | **VERIFIED**                                             | Cloudflare production; hosted suites and asset hashes passed |
 
-## Remaining release gate
+## Release gate and separate submission action
 
 - [x] Application features implemented and locally exercised.
 - [x] Required 100 generated correctness cases executed.
 - [x] Type checking, syntax/unsafe-evaluation checks, production build.
 - [x] Browser, accessibility, offline, recovery and security checks.
 - [x] Documentation, versioned static files and source package.
-- [ ] Authorized public source repository.
-- [ ] Authorized free HTTPS hosting.
-- [ ] Actual public-domain CSP/assets/Worker/Live/offline/export/mobile smoke test.
+- [x] Authorized public source repository.
+- [x] Authorized free HTTPS hosting.
+- [x] Actual public-domain CSP/assets/Worker/Live/offline/export/mobile smoke test.
 - [ ] Repository + website links entered in the submission (only separately authorized).
 
-A deployment ZIP or local server is not a deployed application. A hosted release is not an entry submission. Never use VERIFIED COMPLETE before the unchecked mandatory release gates pass.
+The actual public release passed. A hosted release is not an entry submission; submission remains separately authorized.
 
 ## Audit regression coverage (1.0.1)
 

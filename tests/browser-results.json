@@ -1,0 +1,78 @@
+{
+  "results": [
+    {
+      "name": "Cold production load",
+      "detail": "296 ms"
+    },
+    {
+      "name": "Initial workflow and independently verified result",
+      "detail": "PASS"
+    },
+    {
+      "name": "Evidence download",
+      "detail": "PASS"
+    },
+    {
+      "name": "Critical-path infeasibility certificate",
+      "detail": "PASS"
+    },
+    {
+      "name": "Deadline counterfactual restored",
+      "detail": "PASS"
+    },
+    {
+      "name": "Nonuniform sensitivity recomputation",
+      "detail": "PASS"
+    },
+    {
+      "name": "Three saved scenarios and comparison conditions",
+      "detail": "PASS"
+    },
+    {
+      "name": "Evidence reimport verification",
+      "detail": "PASS"
+    },
+    {
+      "name": "Six-task, two-resource analysis",
+      "detail": "PASS"
+    },
+    {
+      "name": "Workspace backup export",
+      "detail": "PASS"
+    },
+    {
+      "name": "Transactional backup merge",
+      "detail": "PASS"
+    },
+    {
+      "name": "Offline reload and real recomputation",
+      "detail": "PASS"
+    },
+    {
+      "name": "Offline evidence export",
+      "detail": "PASS"
+    },
+    {
+      "name": "Imported/editor text is escaped",
+      "detail": "PASS"
+    },
+    {
+      "name": "Automated accessibility scan",
+      "detail": "0 violations"
+    },
+    {
+      "name": "390px mobile no horizontal page overflow",
+      "detail": "PASS"
+    },
+    {
+      "name": "Keyboard focus reachable",
+      "detail": "PASS"
+    },
+    {
+      "name": "No uncaught browser errors",
+      "detail": "PASS"
+    }
+  ],
+  "pageErrors": [],
+  "axeViolations": 0
+}

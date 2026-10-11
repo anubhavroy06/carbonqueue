@@ -1,0 +1,88 @@
+{
+  "verifiedAt": "2026-10-11T14:50:24.886Z",
+  "url": "https://carbonqueue.pages.dev",
+  "results": [
+    {
+      "name": "Anonymous HTTPS and deployed security headers",
+      "detail": "200; CSP/Worker policy/nosniff/referrer passed"
+    },
+    {
+      "name": "Hosted version and build identity match verified source",
+      "detail": "PASS"
+    },
+    {
+      "name": "Cold production load",
+      "detail": "1883 ms"
+    },
+    {
+      "name": "Initial workflow and independently verified result",
+      "detail": "PASS"
+    },
+    {
+      "name": "Evidence download",
+      "detail": "PASS"
+    },
+    {
+      "name": "Critical-path infeasibility certificate",
+      "detail": "PASS"
+    },
+    {
+      "name": "Deadline counterfactual restored",
+      "detail": "PASS"
+    },
+    {
+      "name": "Nonuniform sensitivity recomputation",
+      "detail": "PASS"
+    },
+    {
+      "name": "Three saved scenarios and comparison conditions",
+      "detail": "PASS"
+    },
+    {
+      "name": "Evidence reimport verification",
+      "detail": "PASS"
+    },
+    {
+      "name": "Six-task, two-resource analysis",
+      "detail": "PASS"
+    },
+    {
+      "name": "Workspace backup export",
+      "detail": "PASS"
+    },
+    {
+      "name": "Transactional backup merge",
+      "detail": "PASS"
+    },
+    {
+      "name": "Offline reload and real recomputation",
+      "detail": "PASS"
+    },
+    {
+      "name": "Offline evidence export",
+      "detail": "PASS"
+    },
+    {
+      "name": "Imported/editor text is escaped",
+      "detail": "PASS"
+    },
+    {
+      "name": "Automated accessibility scan",
+      "detail": "0 violations"
+    },
+    {
+      "name": "390px mobile no horizontal page overflow",
+      "detail": "PASS"
+    },
+    {
+      "name": "Keyboard focus reachable",
+      "detail": "PASS"
+    },
+    {
+      "name": "No uncaught browser errors",
+      "detail": "PASS"
+    }
+  ],
+  "pageErrors": [],
+  "axeViolations": 0
+}

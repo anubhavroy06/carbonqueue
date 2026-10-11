@@ -1,13 +1,20 @@
 {
   "version": "1.0.1",
-  "status": "IMPLEMENTED \u2014 VERIFICATION INCOMPLETE",
-  "verifiedAt": "2026-10-11T13:54:06.500Z",
+  "status": "VERIFIED COMPLETE",
+  "verifiedAt": "2026-10-11T14:52:10.555Z",
   "buildHash": "ed81c53bfabca2cd5db584afdc66c42afa72fba21b46f3fbfce460e60b3baf93",
   "domainGroupsPassed": 20,
   "seededCases": 100,
-  "browserChecks": 75,
-  "axeViolations": 0,
-  "knownAdvisories": 0,
+  "localBrowserChecks": 75,
+  "hostedExecutedChecks": 35,
+  "hostedAdditionalInformationalRecords": 1,
+  "axeViolationsOnTestedScreens": 0,
+  "knownAdvisoriesAtLocalInspection": 0,
   "bundleBytes": 133541,
-  "publicDeployment": "NOT VERIFIED"
+  "publicDeployment": "VERIFIED",
+  "repository": "https://github.com/anubhavroy06/carbonqueue",
+  "website": "https://carbonqueue.pages.dev",
+  "deploymentId": "1061000e-4271-48b5-b917-07adf44a5380",
+  "usesFunctions": false,
+  "hackathonSubmission": "NOT SUBMITTED \u2014 SEPARATE AUTHORIZATION REQUIRED"
 }

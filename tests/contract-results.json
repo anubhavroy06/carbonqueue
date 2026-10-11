@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "Evidence includes independently checkable UTC/local conversion metadata",
+    "Repeated saves produce unique snapshot and scenario IDs",
+    "Restoring a scenario also restores its solver settings",
+    "Replacement backup resolves duplicate record IDs without losing records",
+    "Forged time conversion evidence is rejected",
+    "Cancellation during asynchronous validation prevents a later run",
+    "Worker initialization failure yields explicit FAILED recovery state",
+    "Worker crash is reported without feasibility or validity claim",
+    "Memory-only clear resets active records without falsely claiming durable deletion",
+    "Maximum-length workflow name still produces valid analysis",
+    "Invalid dependency cycle produces a checked structural explanation",
+    "Transient server failure retries once and succeeds within a bounded request",
+    "Blank numerical input is rejected rather than silently treated as zero",
+    "Blank time inputs render safely and navigate to the actual invalid deadline",
+    "Solver budget errors expose and focus their field even inside a closed disclosure"
+  ]
+}

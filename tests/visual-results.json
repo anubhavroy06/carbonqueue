@@ -1,0 +1,14 @@
+{
+  "browser": "153.0.8010.12",
+  "viewportDesktop": [
+    1440,
+    1000
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "textZoom": "200% root font, 720px viewport; measured intro text doubles",
+  "reflow": "PASS",
+  "note": "Local Chromium; not a full cross-browser or WCAG certification."
+}

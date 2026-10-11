@@ -11,11 +11,17 @@
 - Persistence is browser-local and fallible. Failed saves visibly switch to memory mode; export backup is the recovery path. No cross-device sync is implied.
 - Service Worker only caches app assets; remote forecasts never become silently fresh Live data. Safe update waits for persistence and confirmation.
 - Security headers are available for Cloudflare/preview; GitHub Pages cannot be made to support arbitrary response headers. Meta CSP does not substitute for frame-ancestors headers; document actual hosted policy when deployed.
-- Public deployment is withheld until authorization/account access is supplied. Local successful tests cannot establish the remote release gate.
+- Public deployment was initially withheld pending authorization. After authorization, authenticated browser fallback published source and deployed Pages; anonymous hosted checks now establish the remote gate.
 - During restoration, files were reconstructed from exact recorded build commands after environment reset. All claimed current checks were rerun; a downloaded checkpoint preserves work across another reset.
 
 ## 1.0.1 contract audit
 
 The initial release summary was not accepted as proof of complete coverage. The deeper audit repaired validation-stage cancellation, explicit evidence time context, duplicate saved IDs, complete settings restoration, memory-only clear semantics, maximum-name evidence, cycle diagnostics, bounded transient retries, blank numerical/time handling and error focus inside disclosures. Fifteen additional browser contract checks and three additional domain groups execute these paths. No test-only synthetic response is claimed as real Live evidence.
 
-All six browser suites and the complete production release runner were rerun after the final patch. Public source and public-origin verification are still external gates; there is no guaranteed prize claim.
+All six browser suites and the complete production release runner were rerun after the final patch. Public source and public-origin verification were external gates at the audit checkpoint and are now complete; there is no guaranteed prize claim.
+
+## Production publication
+
+GitHub MCP repository creation and content writes returned 403 even after reconnection. Cloudflare MCP could create the project but its issued upload token was rejected by asset endpoints. Authorized browser interfaces successfully created the public repo, committed reviewed files with preserved paths/binary icons, and deployed 15 static files. No duplicate project or paid service was created.
+
+Anonymous public contexts verified the HTTPS app, security policy, computation, actual Live request, offline reload and recovery; all 12 manifest assets match the build. Shared-browser filesystem separation required asserting download events and inspecting the application's exact Blob for evidence reimport instead of falsely claiming a local saveAs worked. Test captures do not become production features.

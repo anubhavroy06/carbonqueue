@@ -1,0 +1,93 @@
+{
+  "measuredAt": "2026-10-11T13:54:04.794Z",
+  "platform": "linux",
+  "architecture": "x64",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.90GHz",
+  "node": "v24.14.1",
+  "files": {
+    "LICENSE.txt": 1281,
+    "_headers": 370,
+    "app.js": 63603,
+    "domain.js": 26826,
+    "forecast.json": 12091,
+    "icon-192.png": 1635,
+    "icon-512.png": 8421,
+    "icon.svg": 346,
+    "index.html": 2614,
+    "manifest.webmanifest": 588,
+    "release.json": 1166,
+    "storage.js": 1358,
+    "styles.css": 11423,
+    "sw.js": 1287,
+    "worker.js": 532
+  },
+  "totalBytes": 133541,
+  "runs": [
+    {
+      "status": "OPTIMAL",
+      "nodes": 1556,
+      "elapsedMs": 7.573768999999999,
+      "grams": 230.65
+    },
+    {
+      "status": "OPTIMAL",
+      "nodes": 1556,
+      "elapsedMs": 3.3464799999999997,
+      "grams": 230.65
+    },
+    {
+      "status": "OPTIMAL",
+      "nodes": 1556,
+      "elapsedMs": 3.0003520000000066,
+      "grams": 230.65
+    },
+    {
+      "status": "OPTIMAL",
+      "nodes": 1556,
+      "elapsedMs": 2.689721999999996,
+      "grams": 230.65
+    },
+    {
+      "status": "OPTIMAL",
+      "nodes": 1556,
+      "elapsedMs": 2.736949999999993,
+      "grams": 230.65
+    },
+    {
+      "status": "OPTIMAL",
+      "nodes": 1556,
+      "elapsedMs": 2.476762000000001,
+      "grams": 230.65
+    },
+    {
+      "status": "OPTIMAL",
+      "nodes": 1556,
+      "elapsedMs": 1.66192199999999,
+      "grams": 230.65
+    },
+    {
+      "status": "OPTIMAL",
+      "nodes": 1556,
+      "elapsedMs": 1.581869999999995,
+      "grams": 230.65
+    },
+    {
+      "status": "OPTIMAL",
+      "nodes": 1556,
+      "elapsedMs": 1.8629379999999998,
+      "grams": 230.65
+    },
+    {
+      "status": "OPTIMAL",
+      "nodes": 1556,
+      "elapsedMs": 1.7076670000000007,
+      "grams": 230.65
+    }
+  ],
+  "stress": {
+    "status": "FEASIBLE_BEST_FOUND",
+    "nodes": 10496,
+    "elapsedMs": 2005.812383,
+    "verification": true
+  }
+}

@@ -1,5 +1,9 @@
 # CarbonQueue 1.0.1
 
+**Verified release:** [Open CarbonQueue](https://carbonqueue.pages.dev) · [Source](https://github.com/anubhavroy06/carbonqueue)
+
+20 domain groups, 100 independent-reference cases, 75 local browser checks and 35 additional hosted checks passed. See [executed verification](docs/TEST_REPORT.md). This is a planning tool—not measured carbon savings or workload dispatch.
+
 An explainable, local-first carbon-aware **workflow planning** application.
 Define dependent tasks, assign fixed resources, compare feasible schedules,
 inspect sound constraint contradictions, save scenarios, and export evidence.
@@ -64,7 +68,7 @@ No realized emissions reduction is claimed.
 
 Public source: https://github.com/anubhavroy06/carbonqueue
 
-Cloudflare Pages project: `carbonqueue`; production deployment and hosted verification are pending. An assigned provider subdomain is not proof of deployment.
+Cloudflare Pages project: `carbonqueue`; production is deployed and anonymously verified at https://carbonqueue.pages.dev. This is a static **Direct Upload** project, not an automatic Git-connected deployment. Repository pushes alone do not redeploy the site.
 
 Build with `npm ci && npm run build`, then upload the contents of `dist/` to the existing Pages project. Use a free provider HTTPS subdomain and static hosting only; no Functions, paid Workers, billing-enabled integrations or purchased domain are required. The `_headers` file supplies CSP, nosniff, Referrer-Policy and Permissions-Policy on Cloudflare Pages.
 

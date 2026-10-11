@@ -34,6 +34,10 @@ The release-browser suite separately performs an actual current keyless API requ
 and asserts 48 future intervals, correct endpoint and independent plan validity.
 These test dependencies are test fixtures, not the application's Live or replay logic.
 
-Local preview CSP tests are not public-host evidence. Browser versions/machine and timings are captured in tests/performance.json and TEST_REPORT.md. No full WCAG certification or comprehensive security audit is claimed.
+Local preview CSP tests alone are not public-host evidence; hosted-browser.mjs now independently checks the actual public response headers and Worker behavior. Browser versions/machine and timings are captured in tests/performance.json and TEST_REPORT.md. No full WCAG certification or comprehensive security audit is claimed.
 
 For the complete six-suite local release, run `npm run test:release`; the runner owns its previews and records build identity. Evidence 1.0.1 includes explicit independently checked UTC/local conversion metadata. Legacy 1.0.0 packets derive UTC metadata and are marked legacyDerived rather than asserting an unknown original timezone.
+
+## Production verification
+
+Use the actual site at https://carbonqueue.pages.dev. Shared-browser suites tests/hosted-browser.mjs and tests/hosted-release-browser.mjs require AGENT_BROWSER_CDP and close only contexts they create; they never close the shared browser. They validate browser download events and the exact export Blob because the remote download filesystem is not the workspace. Provider mocks are explicitly labeled; a separate actual NESO request remains unmocked. Do not run destructive update-version simulations against production.

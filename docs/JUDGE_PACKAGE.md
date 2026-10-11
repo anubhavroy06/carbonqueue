@@ -31,7 +31,7 @@ A longer demo may inspect interval tables, workspaces, backup import/rollback an
 | Originality     | transparent constraint/what-if UX, independent proof checks, reproducible local evidence        | carbon DAG scheduling and its mathematics are established prior art |
 | Track relevance | central workflow shifts flexible GB computation under a carbon-intensity model                  | planning, not dispatch or environmental certification               |
 | Impact          | defined research/data team, actionable schedule/deadline trade-off, offline privacy             | no customer interviews/adoption or measured avoided emissions       |
-| Demo            | edit → real computation → contradiction → verified counterfactual → offline export              | public-domain verification still blocked until hosting access       |
+| Demo            | edit → real computation → contradiction → verified counterfactual → offline export              | public HTTPS and offline/Live/export checks passed       |
 | Implementation  | solver/verifier/Worker race guards, persistence rollback, offline updates, tested failure paths | finite bounded model; no global optimality on timeout               |
 
 Target Best Overall, Best Pitch/Demo and Best Environment conditionally. Eligibility is participant-confirmed. Do not assume award stacking, cash payout availability or official criterion weights. No sponsor badge/integration is claimed; each optional sponsor API would add cost/scope without improving the required planning core.
@@ -47,7 +47,7 @@ Target Best Overall, Best Pitch/Demo and Best Environment conditionally. Eligibi
 7. **What if data fails?** Explicit replay, visible timestamps, bounded timeout/cooldown. Never silently turn an old response into Live.
 8. **Is infeasibility always explained?** Only sound certificates or exhausted finite search support that status; timeout never does.
 9. **Is it zero cost?** Local compute, keyless currently-free API, static deployment path; no billing, tokens, paid domain/database. Existing equipment/network and hosting account access are assumptions.
-10. **What does completion mean?** The declared planner features are implemented. Remote release verification cannot be claimed until deployment and public smoke checks complete.
+10. **What does completion mean?** The declared planner features are implemented. Remote release verification is documented in TEST_REPORT.md; it does not prove a submitted hackathon entry.
 
 ## Submission description (truthful template)
 
@@ -55,8 +55,8 @@ CarbonQueue is a local-first workflow planner that makes flexible-compute timing
 
 ## Submission checklist
 
-- [ ] Real public source URL (code built within permitted hacking period; private backups excluded).
-- [ ] Real public HTTPS application, anonymously tested.
+- [x] Real public source URL (code built within permitted hacking period; private backups excluded).
+- [x] Real public HTTPS application, anonymously tested.
 - [ ] Event-specific video/live-demo requirement met; source/video public for required period.
 - [ ] Actual contributor names and AI-tool disclosure.
 - [ ] Required track-specific entry fields and award/stacking rules checked.
