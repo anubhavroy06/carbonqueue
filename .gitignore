@@ -1,0 +1,15 @@
+node_modules/
+dist/
+server.log
+server.pid
+format.log
+*.zip
+.env*
+tests/*.png
+tests/*.log
+tests/*-failure.json
+tests/exported-*.json
+tests/offline-evidence.json
+tests/actual-live-evidence.json
+tests/full-day-forecast.json
+tests/*.pid

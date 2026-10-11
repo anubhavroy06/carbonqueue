@@ -1,0 +1,119 @@
+[
+  {
+    "id": "E01",
+    "url": "https://codered-orion-ccs.devpost.com/",
+    "publisher": "CougarCS/Devpost",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Loaded official overview",
+    "claim": "Tracks, criteria, prizes, online label, geography, in-person demo wording",
+    "limitation": "No organizer clarification; overview has stale-looking submissions text"
+  },
+  {
+    "id": "E02",
+    "url": "https://codered-orion-ccs.devpost.com/rules",
+    "publisher": "CougarCS/Devpost",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Loaded official rules",
+    "claim": "Student/recent-graduate, 1\u20134 team, new project, local demo, deadline",
+    "limitation": "No India payout or remote exception stated"
+  },
+  {
+    "id": "E03",
+    "url": "https://codered-orion-ccs.devpost.com/details/dates",
+    "publisher": "CougarCS/Devpost",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Loaded official schedule; fast initially failed, comprehensive succeeded",
+    "claim": "2026-10-10 18:00 UTC to 2026-10-11 18:00 UTC; winners 22:00 UTC",
+    "limitation": "Judging start/end blank"
+  },
+  {
+    "id": "E04",
+    "url": "https://codered-orion-ccs.devpost.com/project-gallery",
+    "publisher": "CougarCS/Devpost",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Loaded gallery; fast initially failed, comprehensive succeeded",
+    "claim": "Gallery not published",
+    "limitation": "Cannot compare actual competing submissions"
+  },
+  {
+    "id": "D01",
+    "url": "https://api.carbonintensity.org.uk/",
+    "publisher": "NESO",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Loaded primary API documentation",
+    "claim": "GB endpoints, interval data, CC BY 4.0 link",
+    "limitation": "Coverage is not global"
+  },
+  {
+    "id": "D02",
+    "url": "https://github.com/carbon-intensity/terms",
+    "publisher": "NESO",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Loaded terms, including fee section",
+    "claim": "Currently free, worldwide access, restrictions, rate-limiting",
+    "limitation": "No numeric quota/SLA or enduring-price guarantee"
+  },
+  {
+    "id": "D03",
+    "url": "https://api.carbonintensity.org.uk/intensity/2026-10-11T11:08Z/fw24h",
+    "publisher": "NESO",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Actual single unauthenticated GET 11:08:41 UTC",
+    "claim": "HTTP 200, CORS *, 48 current forecast records",
+    "limitation": "Not stress test; snapshot saved; endpoint output may later differ"
+  },
+  {
+    "id": "H01",
+    "url": "https://github.com/pricing",
+    "publisher": "GitHub",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Loaded pricing",
+    "claim": "Free public repos; avoid unnecessary paid add-ons",
+    "limitation": "No account signup tested"
+  },
+  {
+    "id": "H02",
+    "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages",
+    "publisher": "GitHub",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Loaded docs",
+    "claim": "Static Pages for public repos on Free",
+    "limitation": "Not provisioned"
+  },
+  {
+    "id": "H03",
+    "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+    "publisher": "GitHub",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Loaded limits",
+    "claim": "No free commercial SaaS/ecommerce; soft bandwidth/build limits",
+    "limitation": "Only noncommercial prototype recommended"
+  },
+  {
+    "id": "H04",
+    "url": "https://developers.cloudflare.com/pages/platform/limits/",
+    "publisher": "Cloudflare",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Loaded docs",
+    "claim": "500 free builds/month, file/asset limits, new-account restriction",
+    "limitation": "Signup/card flow not established"
+  },
+  {
+    "id": "H05",
+    "url": "https://developers.cloudflare.com/pages/functions/pricing/",
+    "publisher": "Cloudflare",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Loaded docs",
+    "claim": "Static requests free; Functions share Workers quota",
+    "limitation": "No Functions in core"
+  },
+  {
+    "id": "H06",
+    "url": "https://developers.cloudflare.com/pages/get-started/direct-upload/",
+    "publisher": "Cloudflare",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Loaded docs",
+    "claim": "Drag/drop, pages.dev, upload limits",
+    "limitation": "No deployment performed"
+  }
+]

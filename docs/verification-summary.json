@@ -1,0 +1,13 @@
+{
+  "version": "1.0.1",
+  "status": "IMPLEMENTED \u2014 VERIFICATION INCOMPLETE",
+  "verifiedAt": "2026-10-11T13:54:06.500Z",
+  "buildHash": "ed81c53bfabca2cd5db584afdc66c42afa72fba21b46f3fbfce460e60b3baf93",
+  "domainGroupsPassed": 20,
+  "seededCases": 100,
+  "browserChecks": 75,
+  "axeViolations": 0,
+  "knownAdvisories": 0,
+  "bundleBytes": 133541,
+  "publicDeployment": "NOT VERIFIED"
+}

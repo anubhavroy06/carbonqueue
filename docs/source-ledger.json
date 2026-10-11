@@ -1,0 +1,51 @@
+[
+  {
+    "id": "neso-terms",
+    "url": "https://raw.githubusercontent.com/carbon-intensity/terms/master/README.md",
+    "retrievedAt": "2026-10-11T12:58:54.806704+00:00",
+    "status": 200,
+    "type": "inspected documentation, not account provisioning"
+  },
+  {
+    "id": "cloudflare-limits",
+    "url": "https://developers.cloudflare.com/pages/platform/limits/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "cloudflare-pricing",
+    "url": "https://developers.cloudflare.com/pages/functions/pricing/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "github-pages-limits",
+    "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+    "retrievedAt": "2026-10-11T12:58:54.859805+00:00",
+    "status": 200,
+    "type": "inspected documentation, not account provisioning"
+  },
+  {
+    "id": "event-dates",
+    "url": "https://codered-orion-ccs.devpost.com/details/dates",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "event-rules",
+    "url": "https://codered-orion-ccs.devpost.com/rules",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "fw48-actual-request",
+    "url": "https://api.carbonintensity.org.uk/intensity/2026-10-11T12:56Z/fw48h",
+    "retrievedAt": "2026-10-11T12:56:53.181789+00:00",
+    "status": 200,
+    "cors": "*",
+    "type": "actual public endpoint request; no account or card, not an SLA"
+  },
+  {
+    "id": "neso-official-docs",
+    "url": "https://api.carbonintensity.org.uk/",
+    "retrievedAt": "2026-10-11T13:06:53.127970+00:00",
+    "status": 200,
+    "type": "underlying official page inspected, explicitly documents fw48h"
+  }
+]

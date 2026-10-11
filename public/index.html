@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#183c35" />
+    <meta
+      name="description"
+      content="Explainable carbon-aware workflow planning. Local-first, verified schedules, honest forecasts."
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; worker-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.carbonintensity.org.uk; object-src 'none'; base-uri 'self'"
+    />
+    <link rel="icon" href="./icon.svg" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>CarbonQueue · Make flexibility visible</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to planner</a>
+    <header>
+      <a class="brand" href="./"
+        ><img src="./icon.svg" width="36" height="36" alt="" /><span
+          >CarbonQueue<span class="brand-sub">WORKFLOW INTELLIGENCE</span></span
+        ></a
+      >
+      <nav aria-label="Application">
+        <a href="#planner">Planner</a><a href="#comparison">Scenarios</a
+        ><a href="#workspace">Workspace</a
+        ><a href="#methodology">Methodology</a>
+      </nav>
+      <span class="version">v1.0.1 · local-first</span>
+    </header>
+    <div id="notice" role="status" aria-live="polite"></div>
+    <div id="update" hidden>
+      <span
+        >A new application version is ready. Save or export your work
+        first.</span
+      ><button id="apply-update">Apply update</button>
+    </div>
+    <main id="main" tabindex="-1">
+      <div id="app">
+        <p>Loading the recorded forecast and local workspace…</p>
+      </div>
+    </main>
+    <footer>
+      <strong>Plan with evidence. Not promises.</strong
+      ><span
+        >GB electricity planning · no workload execution · no paid runtime
+        services</span
+      >
+    </footer>
+    <dialog
+      id="confirm-dialog"
+      aria-labelledby="confirm-title"
+      aria-describedby="confirm-message"
+    >
+      <form method="dialog">
+        <h2 id="confirm-title">Confirm action</h2>
+        <p id="confirm-message"></p>
+        <div class="actions">
+          <button value="cancel">Cancel</button
+          ><button class="danger" value="confirm">Confirm</button>
+        </div>
+      </form>
+    </dialog>
+    <input
+      id="import-file"
+      type="file"
+      accept=".json,application/json"
+      hidden
+    />
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
