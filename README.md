@@ -2,7 +2,7 @@
 
 **Live application:** [Open CarbonQueue](https://carbonqueue.pages.dev) · [Source](https://github.com/anubhavroy06/carbonqueue)
 
-**IMPLEMENTED — VERIFICATION INCOMPLETE:** 35 automated groups,100 independent-reference cases,89 local browser checks and51 hosted checks passed. Actual Gemini 3.1 Flash-Lite generation and human-approved deterministic schedule verification passed. Final current-source publication/rebuild is being finalized; mocked tests remain separately identified. See [executed evidence](docs/TEST_REPORT.md). The complete core planner needs no AI/key/account; optional Gemini drafts inputs and always requires human review before deterministic solving.
+**VERIFIED COMPLETE:** 35 automated groups,100 independent-reference cases,89 local browser checks and51 hosted checks passed. Actual Gemini 3.1 Flash-Lite generation and human-approved deterministic schedule verification passed. The public-source rebuild matches deployment; mocked tests remain separately identified. See [executed evidence](docs/TEST_REPORT.md). The complete core planner needs no AI/key/account; optional Gemini drafts inputs and always requires human review before deterministic solving.
 
 An explainable, local-first carbon-aware **workflow planning** application.
 Define dependent tasks, assign fixed resources, compare feasible schedules,

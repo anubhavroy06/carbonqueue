@@ -1,6 +1,6 @@
 # CarbonQueue 1.1.0 — executed release evidence
 
-**Status: IMPLEMENTED — VERIFICATION INCOMPLETE.** Core application, deployed backend and mocked copilot review flow passed the checks below. Actual Gemini 3.1 Flash-Lite generation and approved-draft scheduling passed; the final current public-source rebuild/publication is being finalized. No prize guarantee is made.
+**Status: VERIFIED COMPLETE.** Core application, deployed backend and mocked copilot review flow passed the checks below. Actual Gemini 3.1 Flash-Lite generation and approved-draft scheduling passed; the final current public-source rebuild passed and matches deployment. No prize guarantee is made.
 
 - Website: https://carbonqueue.pages.dev
 - Source: https://github.com/anubhavroy06/carbonqueue
@@ -30,3 +30,6 @@ Public publication and anonymous clean-checkout rebuild are checked separately f
 
 ## Real Gemini integration (separate from mocked/automated counts)
 User supplied a free-project key via secure form; the agent did not read it. An actual Gemini 3.1 Flash-Lite response produced four tasks/one resource. Human review corrected an extra backup dependency/release to honor the independent-backup brief. Explicit approval applied the draft; genuine solver output passed independent verification; Undo restored and reverified the original workflow. Key cleared. First 2.5 attempt failed with an initially generic safe error; exact cause remains unresolved. No automatic inference retry/fallback. See `tests/gemini-live-verification.json`. Gemini 2.5/3.5 alternatives are allowlisted and failure/selection tested, not all successful-live tested. No model is assumed correct, reliable or free for every key/project.
+
+## Final public-source verification
+Anonymous checkout `a600804acfb96a961c6222744954e228261d981a` rebuilt 2026-10-11T15:45:01.111Z:35 groups/typecheck/syntax checks PASS; runtime build SHA256 matches `f82c8b6b6e3d6c545531188088aea6f7ffc176ac9c31e460a7f07e8c52f2ddb5`. Subsequent handoff commit changes documentation/evidence only, not runtime bytes. Final release status assembled 2026-10-11T15:46:02.312116+00:00: **VERIFIED COMPLETE within the bounded application contract and tested Gemini 3.1 Flash-Lite path**. No claim that every account/model/network can always succeed.

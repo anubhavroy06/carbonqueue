@@ -1,6 +1,6 @@
 # CarbonQueue 1.1.0 — optional workflow copilot
 
-Status: IMPLEMENTED — VERIFICATION INCOMPLETE. Current local/hosted checks and actual Gemini 3.1 Flash-Lite generation → human review → schedule verification passed. Final current-source rebuild/publication is being completed; mocked tests remain separately labeled.
+Status: VERIFIED COMPLETE. Current local/hosted checks and actual Gemini 3.1 Flash-Lite generation → human review → schedule verification passed. The anonymous current-source rebuild matched the hosted build; mocked tests remain separately labeled.
 
 ## New shipped scope
 - Plain-language brief → Gemini structured task/resource inputs → editable JSON review → explicit approval → normal editor → real solver and verifier.

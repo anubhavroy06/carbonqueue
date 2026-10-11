@@ -1,7 +1,7 @@
 {
   "version": "1.1.0",
-  "status": "IMPLEMENTED \u2014 VERIFICATION INCOMPLETE",
-  "assembledAt": "2026-10-11T15:25:46.629734+00:00",
+  "status": "VERIFIED COMPLETE",
+  "assembledAt": "2026-10-11T15:46:02.312116+00:00",
   "buildHash": "f82c8b6b6e3d6c545531188088aea6f7ffc176ac9c31e460a7f07e8c52f2ddb5",
   "url": "https://carbonqueue.pages.dev",
   "deployment": "8bb5e8c6-c599-4b6f-ab3d-ac7f1a25b4e1",
@@ -14,7 +14,9 @@
   "localBrowserChecks": 89,
   "hostedBrowserChecks": 51,
   "liveGeminiVerified": true,
-  "sourcePublication": "pending current commit verification",
+  "sourcePublication": "published and anonymously rebuilt; exact runtime hash match",
   "submission": "not submitted",
-  "model": "gemini-3.1-flash-lite"
+  "model": "gemini-3.1-flash-lite",
+  "sourceRuntimeCommit": "a600804acfb96a961c6222744954e228261d981a",
+  "publicRebuildVerifiedAt": "2026-10-11T15:45:01.111Z"
 }

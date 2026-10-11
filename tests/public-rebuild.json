@@ -1,0 +1,12 @@
+{
+  "verifiedAt": "2026-10-11T15:45:01.111Z",
+  "repo": "https://github.com/anubhavroy06/carbonqueue",
+  "commit": "a600804acfb96a961c6222744954e228261d981a",
+  "version": "1.1.0",
+  "buildHash": "f82c8b6b6e3d6c545531188088aea6f7ffc176ac9c31e460a7f07e8c52f2ddb5",
+  "tests": "35 groups PASS",
+  "typecheck": "PASS",
+  "lint": "PASS",
+  "source": "anonymous public checkout",
+  "match": true
+}

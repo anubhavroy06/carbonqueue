@@ -1,6 +1,6 @@
 # Prompt completion audit — 1.1.0
 
-**IMPLEMENTED — VERIFICATION INCOMPLETE** for the upgraded release: actual successful Gemini call passed; final public source rebuild/publication pending. The original 25-section core application contract passes the executed current regressions; the optional integration has an actual live-tested 3.1 Flash-Lite path, with human correction/approval before verified scheduling.
+**VERIFIED COMPLETE** for the upgraded release: actual successful Gemini call and final public-source rebuild passed. The original 25-section core application contract passes the executed current regressions; the optional integration has an actual live-tested 3.1 Flash-Lite path, with human correction/approval before verified scheduling.
 
 | Sections | Current implementation/evidence |
 |---|---|

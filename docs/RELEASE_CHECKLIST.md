@@ -1,6 +1,6 @@
 # Release checklist and traceability — 1.1.0
 
-Status: **IMPLEMENTED — VERIFICATION INCOMPLETE**. The original bounded planner contract passed current local and hosted regression checks. New optional copilot integration is implemented; actual Gemini successful request passed; final current public source rebuild/publication is outstanding.
+Status: **VERIFIED COMPLETE**. The original bounded planner contract passed current local and hosted regression checks. New optional copilot integration is implemented; actual Gemini successful request and final current-source rebuild both passed.
 
 | Contract | Implementation | Executed evidence |
 |---|---|---|
