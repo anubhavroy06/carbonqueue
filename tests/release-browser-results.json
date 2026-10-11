@@ -54,7 +54,7 @@
     },
     {
       "name": "Actual browser NESO live smoke",
-      "detail": "Live GB loaded. Origin moved to 2026-10-11T15:30Z. Slot constraints are relative to this explicit new origin."
+      "detail": "Live GB loaded. Origin moved to 2026-10-11T16:00Z. Slot constraints are relative to this explicit new origin."
     },
     {
       "name": "Service-worker update activation preserves editor",

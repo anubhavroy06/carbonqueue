@@ -1,6 +1,6 @@
 # Release checklist and traceability — 1.1.0
 
-Status: **IMPLEMENTED — VERIFICATION INCOMPLETE**. The original bounded planner contract passed current local and hosted regression checks. New optional copilot integration is implemented; actual Gemini successful request is the outstanding verification gate.
+Status: **IMPLEMENTED — VERIFICATION INCOMPLETE**. The original bounded planner contract passed current local and hosted regression checks. New optional copilot integration is implemented; actual Gemini successful request passed; final current public source rebuild/publication is outstanding.
 
 | Contract | Implementation | Executed evidence |
 |---|---|---|
@@ -13,8 +13,8 @@ Status: **IMPLEMENTED — VERIFICATION INCOMPLETE**. The original bounded planne
 | Evidence JSON/human report/import recheck/time context | domain.ts/app.js | browser Blob download/reimport and domain tamper tests |
 | Offline lifecycle/safe update/root/subpath | sw.js/build.mjs | local controlled update, root/subpath; hosted install/offline reload |
 | Mobile/keyboard/accessible alternatives/no placeholders | index/styles/app/copilot | 89 local/51 hosted checks, zero reported axe violations in tested states |
-| Secure optional BYOK/backend | _worker.js/copilot.js/_routes.json | 14 gateway groups, 14 local/16 hosted copilot checks |
-| Actual successful Gemini generation | same gateway/provider | **PENDING user-provided free-project key**; mocked success is not proof |
+| Secure optional BYOK/backend | _worker.js/copilot.js/_routes.json | 15 gateway groups, 14 local/16 hosted copilot checks |
+| Actual successful Gemini generation | same gateway/provider | **ACTUAL 3.1 Flash-Lite generation PASS**, human-reviewed then solver/verifier PASS; other model alternatives documented/mocked |
 | Hosted/source integrity | Cloudflare/GitHub | deployment, headers,13 asset hashes; clean public rebuild separate |
 
 No core implementation is deferred to a roadmap. Model boundaries remain explicit: no workload execution, metering, global regions, carbon certification or statistical savings guarantee. New optional provider capability does not change the deterministic solver's authority.

@@ -1,13 +1,13 @@
 # Current deployment state
 
-CarbonQueue **1.1.0**, deployed 3dcccd80-7b1f-48d4-a5bc-cf334996210e, successful at 2026-10-11T15:27:58Z.
+CarbonQueue **1.1.0**, deployed 8bb5e8c6-c599-4b6f-ab3d-ac7f1a25b4e1, successful at 2026-10-11T15:37:54Z.
 
 Website: https://carbonqueue.pages.dev
-Immutable deployment: https://3dcccd80.carbonqueue.pages.dev
+Immutable deployment: https://8bb5e8c6.carbonqueue.pages.dev
 Public source: https://github.com/anubhavroy06/carbonqueue
-Build: `45ea64fb53ab44c69b6b46d22f9e826b93247a8870c9ce9b529ce3f4621caa88`
+Build: `f82c8b6b6e3d6c545531188088aea6f7ffc176ac9c31e460a7f07e8c52f2ddb5`
 
-Actual hosted planner, Live NESO, replay/offline, headers/assets and gateway health/missing-key refusal checked. Optional actual Gemini success remains unverified pending user key. Overall upgrade status: **IMPLEMENTED — VERIFICATION INCOMPLETE**.
+Actual hosted planner, Live NESO, replay/offline, headers/assets and gateway health/missing-key refusal checked. Actual Gemini 3.1 Flash-Lite generation, review/correction, approval and verified scheduling passed. Final current-source rebuild/publication is being finalized. Overall upgrade status: **IMPLEMENTED — VERIFICATION INCOMPLETE**.
 
 Pages Direct Upload, advanced-mode `_worker.js` for `/api/*` only; static core excluded from function invocations by `_routes.json`. Account Workers Free confirmed Current plan in dashboard; no paid upgrade, purchased domain, database, billing change or master server key. Source uploads use authorized browser interfaces where MCP write/asset authorization is insufficient. Source pushes do not auto-deploy.
 

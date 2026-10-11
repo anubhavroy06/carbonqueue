@@ -1,5 +1,5 @@
 {
-  "measuredAt": "2026-10-11T15:27:31.704Z",
+  "measuredAt": "2026-10-11T15:37:10.891Z",
   "platform": "linux",
   "architecture": "x64",
   "cpu": "Intel(R) Xeon(R) Processor @ 2.90GHz",
@@ -8,9 +8,9 @@
     "LICENSE.txt": 1281,
     "_headers": 370,
     "_routes.json": 55,
-    "_worker.js": 10617,
+    "_worker.js": 12794,
     "app.js": 64771,
-    "copilot.js": 9706,
+    "copilot.js": 10069,
     "domain.js": 26826,
     "forecast.json": 12091,
     "icon-192.png": 1635,
@@ -24,73 +24,73 @@
     "sw.js": 1319,
     "worker.js": 532
   },
-  "totalBytes": 157696,
+  "totalBytes": 160236,
   "runs": [
     {
       "status": "OPTIMAL",
       "nodes": 1556,
-      "elapsedMs": 8.277534000000003,
+      "elapsedMs": 7.068047,
       "grams": 230.65
     },
     {
       "status": "OPTIMAL",
       "nodes": 1556,
-      "elapsedMs": 3.5044109999999975,
+      "elapsedMs": 3.8864769999999993,
       "grams": 230.65
     },
     {
       "status": "OPTIMAL",
       "nodes": 1556,
-      "elapsedMs": 3.1415390000000016,
+      "elapsedMs": 3.023449999999997,
       "grams": 230.65
     },
     {
       "status": "OPTIMAL",
       "nodes": 1556,
-      "elapsedMs": 2.4625819999999976,
+      "elapsedMs": 2.898005999999995,
       "grams": 230.65
     },
     {
       "status": "OPTIMAL",
       "nodes": 1556,
-      "elapsedMs": 2.2358019999999996,
+      "elapsedMs": 2.8416420000000002,
       "grams": 230.65
     },
     {
       "status": "OPTIMAL",
       "nodes": 1556,
-      "elapsedMs": 2.0651379999999975,
+      "elapsedMs": 1.6660619999999966,
       "grams": 230.65
     },
     {
       "status": "OPTIMAL",
       "nodes": 1556,
-      "elapsedMs": 1.8418570000000045,
+      "elapsedMs": 1.6551659999999941,
       "grams": 230.65
     },
     {
       "status": "OPTIMAL",
       "nodes": 1556,
-      "elapsedMs": 2.1835569999999933,
+      "elapsedMs": 1.6209050000000005,
       "grams": 230.65
     },
     {
       "status": "OPTIMAL",
       "nodes": 1556,
-      "elapsedMs": 2.6330409999999986,
+      "elapsedMs": 1.7746999999999957,
       "grams": 230.65
     },
     {
       "status": "OPTIMAL",
       "nodes": 1556,
-      "elapsedMs": 2.378608,
+      "elapsedMs": 1.7751579999999976,
       "grams": 230.65
     }
   ],
   "stress": {
     "status": "FEASIBLE_BEST_FOUND",
-    "nodes": 10752,
-    "elapsedMs": 2002.684066,
+    "nodes": 10624,
+    "elapsedMs": 2009.9387860000002,
     "verification": true
   }
 }

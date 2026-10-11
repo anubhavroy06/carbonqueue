@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-11T15:29:46.181Z",
+  "verifiedAt": "2026-10-11T15:43:37.526Z",
   "url": "https://carbonqueue.pages.dev",
   "version": "1.1.0",
-  "buildHash": "45ea64fb53ab44c69b6b46d22f9e826b93247a8870c9ce9b529ce3f4621caa88",
+  "buildHash": "f82c8b6b6e3d6c545531188088aea6f7ffc176ac9c31e460a7f07e8c52f2ddb5",
   "checked": [
     {
       "file": "LICENSE.txt",
@@ -19,7 +19,7 @@
     {
       "file": "copilot.js",
       "status": 200,
-      "bytes": 9706,
+      "bytes": 10069,
       "hashMatches": true
     },
     {
@@ -84,7 +84,7 @@
     }
   ],
   "serverFiles": {
-    "_worker.js": "243bbf3787e25ebfe3e42a11ceeebf994d2fe6cb79f84704186c1fd88ad15755",
+    "_worker.js": "7b69e5e825d6d2fc761b1df64975dc9bae7a0f5c72cbc3d7887b19216bfd7f02",
     "_routes.json": "969337f100313a704668abfa4462f798ee00e25504814fc1986ccafebbf2b4e5",
     "_headers": "d85ff92dca3639a83180d4fed4f6dfe8ca8913608d09d1606ce542ad129ca9c6"
   }

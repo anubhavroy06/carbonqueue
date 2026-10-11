@@ -216,3 +216,55 @@ test("Non-API delegated to static binding without calling provider", async () =>
   });
   assert.equal(await r.text(), "static");
 });
+
+test("Explicit model allowlist and safe diagnostic distinguish provider errors without leaking key", async () => {
+  const invalid = await handle(
+    req({ body: { model: "https://arbitrary.example/proxy" } }),
+    {},
+    () => {
+      throw Error("must not call");
+    },
+  );
+  assert.equal(invalid.status, 400);
+  const k = key + "diagnostics";
+  const r = await handle(
+    req({
+      headers: { "X-Gemini-Key": k },
+      body: { model: "gemini-3.1-flash-lite" },
+    }),
+    {},
+    async (url) => {
+      assert(url.endsWith("/gemini-3.1-flash-lite:generateContent"));
+      return new Response(
+        JSON.stringify({
+          error: {
+            message: "API key not valid " + key,
+            status: "INVALID_ARGUMENT",
+            details: [{ reason: "API_KEY_INVALID" }],
+          },
+        }),
+        { status: 400 },
+      );
+    },
+  );
+  assert.equal(r.status, 401);
+  const text = await r.text();
+  assert(!text.includes(key));
+  const d = JSON.parse(text);
+  assert.equal(d.providerCode, "API_KEY_INVALID");
+  assert.equal(d.providerStatus, 400);
+  const missing = await handle(
+    req({
+      headers: { "X-Gemini-Key": k + "b" },
+      body: { model: "gemini-3.5-flash-lite" },
+    }),
+    {},
+    async () =>
+      new Response(
+        JSON.stringify({ error: { message: key, status: "NOT_FOUND" } }),
+        { status: 404 },
+      ),
+  );
+  assert.equal(missing.status, 502);
+  assert(!(await missing.text()).includes(key));
+});

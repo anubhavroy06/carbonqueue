@@ -1,5 +1,6 @@
 // CarbonQueue optional BYOK gateway. No stored provider keys, prompts, or results.
-const MODEL = "gemini-2.5-flash-lite";
+const MODEL = "gemini-3.1-flash-lite";
+const MODELS = [MODEL, "gemini-2.5-flash-lite", "gemini-3.5-flash-lite"];
 const counters = new Map(); // Best-effort per-isolate guard, not durable/global quota enforcement.
 const HEADERS = {
   "Content-Type": "application/json; charset=utf-8",
@@ -127,6 +128,7 @@ export async function handle(request, env = {}, upstream = fetch) {
       service: "CarbonQueue optional workflow copilot",
       version: "1.1.0",
       model: MODEL,
+      models: MODELS,
       storesKeys: false,
       storesPrompts: false,
       coreRequiresAI: false,
@@ -191,6 +193,12 @@ export async function handle(request, env = {}, upstream = fetch) {
       error:
         "Confirm privacy/free-project consent and enter a description (maximum 4,000 characters) with a 1–48-slot horizon.",
     });
+  const model = body.model || MODEL;
+  if (!MODELS.includes(model))
+    return reply(400, {
+      error:
+        "Choose a listed free-tier text model. Arbitrary provider models are not allowed.",
+    });
   const digest = await crypto.subtle.digest(
     "SHA-256",
     new TextEncoder().encode(key),
@@ -213,7 +221,7 @@ export async function handle(request, env = {}, upstream = fetch) {
   const timer = setTimeout(() => controller.abort(), 20000);
   try {
     const response = await upstream(
-      `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json", "x-goog-api-key": key },
@@ -238,15 +246,62 @@ export async function handle(request, env = {}, upstream = fetch) {
     );
     if (!response.ok) {
       const status = response.status;
+      let code = "PROVIDER_ERROR";
+      try {
+        const text = await response.text();
+        if (text.length <= 16000) {
+          const error = JSON.parse(text)?.error;
+          const reasons = Array.isArray(error?.details)
+            ? error.details.map((d) => d?.reason)
+            : [];
+          const message =
+            typeof error?.message === "string" ? error.message : "";
+          if (
+            reasons.includes("API_KEY_INVALID") ||
+            message.includes("API key not valid")
+          )
+            code = "API_KEY_INVALID";
+          else if (reasons.includes("SERVICE_DISABLED"))
+            code = "SERVICE_DISABLED";
+          else if (
+            message.includes("response_schema") ||
+            message.includes("responseSchema")
+          )
+            code = "SCHEMA_REJECTED";
+          else if (
+            [
+              "INVALID_ARGUMENT",
+              "NOT_FOUND",
+              "PERMISSION_DENIED",
+              "RESOURCE_EXHAUSTED",
+              "UNAUTHENTICATED",
+              "UNAVAILABLE",
+            ].includes(error?.status)
+          )
+            code = error.status;
+        }
+      } catch {
+        /* Never expose provider body or arbitrary messages. */
+      }
+      const auth =
+        code === "API_KEY_INVALID" || status === 401 || status === 403;
+      const help = auth
+        ? "Gemini rejected the key or project permissions. Check the key in AI Studio."
+        : status === 429
+          ? "Gemini quota exhausted. Check project limits; no automatic retry."
+          : status === 404
+            ? "This model is unavailable for this project. You may explicitly choose another listed model; no automatic fallback occurs."
+            : code === "SCHEMA_REJECTED"
+              ? "Gemini rejected the structured-output schema. Nothing was applied."
+              : code === "SERVICE_DISABLED"
+                ? "The Gemini API is not enabled for this project. Check project setup without enabling paid billing."
+                : "Gemini rejected or could not complete this request. Check the selected model and project access. The local planner still works.";
       return reply(
-        status === 429 ? 429 : status === 401 || status === 403 ? 401 : 502,
+        status === 429 ? 429 : auth ? 401 : 502,
         {
-          error:
-            status === 429
-              ? "Gemini quota exhausted. Check your project limits; no automatic retry."
-              : status === 401 || status === 403
-                ? "Gemini rejected this key or project access. Check API permissions."
-                : "Gemini unavailable or this model is not accessible. The local planner still works.",
+          error: help + " (Provider HTTP " + status + " · " + code + ")",
+          providerStatus: status,
+          providerCode: code,
         },
         status === 429 ? { "Retry-After": "60" } : {},
       );
@@ -281,7 +336,7 @@ export async function handle(request, env = {}, upstream = fetch) {
       ).slice(0, 1500);
     return reply(200, {
       draft,
-      model: MODEL,
+      model,
       kind: "AI_ASSISTED_UNVERIFIED_INPUT",
       warning:
         "Confirm every value. This is not a schedule, measured electricity, or a carbon claim.",

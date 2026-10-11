@@ -1,0 +1,29 @@
+{
+  "testedAt": "2026-10-11T15:42:02.603Z",
+  "url": "https://carbonqueue.pages.dev",
+  "model": "gemini-3.1-flash-lite",
+  "mode": "ACTUAL user-provided free-project key; public illustrative prompt",
+  "success": true,
+  "taskCount": 4,
+  "resourceCount": 1,
+  "horizon": 24,
+  "keyCleared": true,
+  "keyReadOrLoggedByAgent": false,
+  "automaticRetry": false,
+  "review": "Corrected backup dependency/release to match the brief; model output is not assumed semantically correct.",
+  "humanApproval": true,
+  "scheduleIndependentVerification": "PASS",
+  "modelledNotMeasured": true,
+  "originalWorkflowRestored": true,
+  "previousAttempt": {
+    "testedAt": "2026-10-11T15:35:11.259Z",
+    "url": "https://carbonqueue.pages.dev",
+    "model": "gemini-2.5-flash-lite",
+    "mode": "ACTUAL user-provided key; public illustrative prompt",
+    "success": false,
+    "result": "Gateway returned sanitized unavailable/model-access error; exact provider status was not exposed by this build.",
+    "keyCleared": true,
+    "keyReadOrLoggedByAgent": false,
+    "automaticRetry": false
+  }
+}

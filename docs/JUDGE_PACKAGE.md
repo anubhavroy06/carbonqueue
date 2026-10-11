@@ -34,7 +34,7 @@ A longer demo may inspect interval tables, workspaces, backup import/rollback an
 | Demo            | edit → real computation → contradiction → verified counterfactual → offline export              | public HTTPS and offline/Live/export checks passed       |
 | Implementation  | solver/verifier/Worker race guards, persistence rollback, offline updates, tested failure paths | finite bounded model; no global optimality on timeout               |
 
-Target Best Overall, Best Pitch/Demo and Best Environment conditionally. Eligibility is participant-confirmed. Do not assume award stacking, cash payout availability or official criterion weights. The optional Gemini workflow drafting integration is implemented but actual successful model generation remains unverified pending a user key. Do not claim Gemini prize eligibility until a real call and meaningful demonstration are verified. No dummy sponsor badges or unrelated APIs are added.
+Target Best Overall, Best Pitch/Demo and Best Environment conditionally. Eligibility is participant-confirmed. Do not assume award stacking, cash payout availability or official criterion weights. The optional Gemini workflow drafting integration is implemented but actual 3.1 Flash-Lite generation and approved-draft scheduling passed. Demonstrate the real draft/review/verification path; event-specific Gemini entry eligibility must still be checked. No dummy sponsor badges or unrelated APIs are added.
 
 ## Ten defensible answers
 

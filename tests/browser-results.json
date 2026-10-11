@@ -2,7 +2,7 @@
   "results": [
     {
       "name": "Cold production load",
-      "detail": "269 ms"
+      "detail": "191 ms"
     },
     {
       "name": "Initial workflow and independently verified result",

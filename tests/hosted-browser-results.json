@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-10-11T15:28:58.955Z",
+  "verifiedAt": "2026-10-11T15:39:04.880Z",
   "url": "https://carbonqueue.pages.dev",
   "results": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "name": "Cold production load",
-      "detail": "1990 ms"
+      "detail": "2540 ms"
     },
     {
       "name": "Initial workflow and independently verified result",
