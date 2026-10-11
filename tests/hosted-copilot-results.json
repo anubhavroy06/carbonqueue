@@ -1,0 +1,70 @@
+{
+  "verifiedAt": "2026-10-11T15:30:03.313Z",
+  "providerMode": "MOCKED; no real key used",
+  "checks": [
+    {
+      "name": "Actual deployed gateway health/version; no key required",
+      "result": "PASS"
+    },
+    {
+      "name": "Actual deployed gateway rejects missing key before provider call",
+      "result": "PASS"
+    },
+    {
+      "name": "No key: zero provider requests and local planner still available",
+      "result": "PASS"
+    },
+    {
+      "name": "Consent required",
+      "result": "PASS"
+    },
+    {
+      "name": "Structured mocked provider draft reviewed before editor changes",
+      "result": "PASS"
+    },
+    {
+      "name": "Second human approval required",
+      "result": "PASS"
+    },
+    {
+      "name": "Tampered draft rejected locally",
+      "result": "PASS"
+    },
+    {
+      "name": "Approved replacement applied transactionally",
+      "result": "PASS"
+    },
+    {
+      "name": "AI inputs use genuine deterministic solver/verifier",
+      "result": "PASS"
+    },
+    {
+      "name": "Undo restores previous workflow",
+      "result": "PASS"
+    },
+    {
+      "name": "Key absent from browser persistence",
+      "result": "PASS"
+    },
+    {
+      "name": "Explicit forget clears key",
+      "result": "PASS"
+    },
+    {
+      "name": "Expanded copilot automated accessibility: zero violations",
+      "result": "PASS"
+    },
+    {
+      "name": "Mobile copilot no horizontal overflow",
+      "result": "PASS"
+    },
+    {
+      "name": "Reload never restores key",
+      "result": "PASS"
+    },
+    {
+      "name": "No automatic inference requests",
+      "result": "PASS"
+    }
+  ]
+}

@@ -9,7 +9,9 @@ escaped before templates; network/source URLs allow HTTP(S) only when linked.
 validates every record before changing persistence or in-memory state.
 `public/sw.js`: same-origin app-shell cache; never intercepts external API.
 `build.mjs`: source asset hashes produce a new SW cache version after asset changes.
-`server.mjs`: local static preview with security headers; not a production backend.
+`server.mjs`: local static preview with security headers and the same gateway handler for `/api/*`.
+`public/_worker.js`: standalone Cloudflare Pages advanced-mode optional BYOK gateway. `_routes.json` invokes it only for `/api/*`; all ordinary assets remain static.
+`public/copilot.js`: independent UI and session-only key memory; validated JSON draft review and explicit approval before editor mutation. No model output is accepted as a schedule or certificate.
 
 ## Algorithm
 
@@ -45,7 +47,7 @@ Workflow: schemaVersion=1,id,name,horizon,resources[{id,name}],tasks[{id,name,no
 resourceId,duration,energyKWh,release,deadline,dependsOn[]}].
 Forecast: schemaVersion=1,id,name,mode(LIVE/REPLAY/CUSTOM),kind(forecast/measurement/
 synthetic),geography,units(gCO2/kWh),sourceUrl,license,retrievedAt,raw,slots[{from,to,value}].
-Evidence: schemaVersion=1,appVersion=1.0.1,id,name,createdAt,runId,fingerprint,workflow,
+Evidence: schemaVersion=1,appVersion=1.1.0,id,name,createdAt,runId,fingerprint,workflow,
 forecast,result,assumptions[]. Result contains status,schedule,baseline,verification,
 baselineVerification,certificate,nodes,elapsedMs,config(maxNodes,maxMs).
 Backup: schemaVersion=1,workflow,forecast,saved[],datasets[],scenarios[]. Use actual

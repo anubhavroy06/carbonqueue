@@ -37,7 +37,7 @@ try {
     "export-evidence",
     "audit-time-evidence.json",
   );
-  assert.equal(packet.appVersion, "1.0.1");
+  assert.equal(packet.appVersion, "1.1.0");
   assert.equal(packet.timeContext.slotMinutes, 30);
   assert.ok(packet.timeContext.displayTimeZone);
   for (const task of packet.workflow.tasks) {

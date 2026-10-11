@@ -2,7 +2,7 @@
   "checks": [
     "QuotaExceededError keeps a usable in-memory editor and solver",
     "Oversized file rejected without editor change",
-    "Allowed 2 MiB import parsed and usable in 357 ms (including browser interaction)",
+    "Allowed 2 MiB import parsed and usable in 342 ms (including browser interaction)",
     "48-hour normalization supplies a full future 24-hour horizon (explicitly mocked provider)",
     "Stale Worker error ignored; forged active result rejected safely"
   ]

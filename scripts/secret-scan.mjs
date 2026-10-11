@@ -1,5 +1,6 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 const patterns = [
+  /\bAIza[0-9A-Za-z_-]{30,}\b/,
   /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/,
   /\bgh[pousr]_[A-Za-z0-9]{30,}\b/,
   /\bAKIA[0-9A-Z]{16}\b/,

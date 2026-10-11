@@ -1,18 +1,16 @@
-# Prompt completion audit — final release
+# Prompt completion audit — 1.1.0
 
-**Status: VERIFIED COMPLETE within the declared application contract.**
+**IMPLEMENTED — VERIFICATION INCOMPLETE** for the upgraded release: actual successful Gemini call pending user key. The original 25-section core application contract passes the executed current regressions; the optional integration must not be advertised as live-verified until tested.
 
-| Prompt sections | Evidence | Verdict |
-|---|---|---|
-| 1–5 Mission/scope/authorization/research | bounded planner, confirmed eligibility, current source ledger, traceability and no-spend decisions | Complete |
-| 6–7 Contracts/editor | typed models, UTC context, six tasks/two resources, CRUD, DAG/time validation and keyboard errors | Implemented/tested |
-| 8–11 Data/solver/lifecycle/carbon | real Live/replay/custom sources, independent verifier/reference, bounded statuses, cancellation and honest model | Implemented/tested |
-| 12–14 Scenarios/storage/evidence | certificates, counterfactual/sensitivity, comparison, transactional backup and independently checked imports | Implemented/tested |
-| 15–17 Offline/UI/security | actual offline reload/update checks, mobile/keyboard/axe, safe rendering/CSP and licenses | Implemented/tested within stated coverage |
-| 18–20 Cost/judging/tests | no paid integrations, judge matrix/scripts, 20 domain groups, 100 reference cases, 75 local +35 hosted checks | Complete |
-| 21 Public release | actual public source and static HTTPS deployment with anonymous UI/header/asset verification | Complete |
-| 22–25 Docs/repair/gate/handoff | README, schemas/methodology/report/cost/license/demo docs, versioned artifacts and truthful status | Complete |
+| Sections | Current implementation/evidence |
+|---|---|
+| 1–5 mission/scope/research/authorization | Bounded planning product, confirmed eligibility, documented no-spend choices; event deadline 18:00 UTC Oct11, no entry submitted |
+| 6–7 contracts/editor | Strict models, UTC context, six tasks/two fixed resources, complete CRUD/validation/undo |
+| 8–11 data/solver/lifecycle/carbon | Actual Live NESO and replay/custom; independent reference/verifier; honest bounded states/cancellation; modeled gCO2, not measured avoided emissions |
+| 12–14 scenarios/storage/evidence | Verified certificates/what-if/sensitivity/comparison, transactional persistence/backup, export/import/time context |
+| 15–17 offline/UI/security | Real offline recomputation, safe update/subpaths, mobile/keyboard/axe, CSP/safe rendering; optional session-key gateway |
+| 18–20 cost/judging/testing | Free hosting account confirmed, provider billing caveat, track/limitations, 34 groups/100 cases/89 local/51 hosted checks |
+| 21 public release | Production 1.1.0 deployed, anonymous headers/assets/UI/gateway checked; source publication and clean rebuild separately logged |
+| 22–25 docs/repair/handoff | Current report/checklist/model/cost/privacy/AI disclosure, preserved rollback; no claim of actual Gemini success yet |
 
-No mandatory planner feature is deferred to future work. Optional CSV, Gemini inference, cloud execution/accounts and unrelated sponsor integrations are not required product features and were not added. A separate source-to-host automatic CI integration is not claimed: this release uses Direct Upload.
-
-Completion means all declared implementation and release gates passed the executed checks; it does not promise zero undiscovered bugs, certification, measured avoided emissions, unrestricted scale or a prize. Hackathon entry and actual video/live submission remain separate participant-authorized actions. See RELEASE_CHECKLIST.md and TEST_REPORT.md for feature/test evidence and limitations.
+No implementation gap is disguised as a model limitation. Refer to TEST_REPORT, DEPENDENCY_AUDIT and UPGRADE_1_1 for evidence and exact integration boundary.

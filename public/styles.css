@@ -710,3 +710,122 @@ progress {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* Optional, progressive workflow copilot: core planner remains independent. */
+.copilot-panel {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 2rem;
+  margin: 1.5rem 0;
+  padding: 1.5rem 2rem;
+  border: 1px solid #bbcba5;
+  border-radius: 20px;
+  background: linear-gradient(120deg, #e6f0d6, #f8faf2);
+}
+.copilot-lead h2 {
+  font-size: clamp(1.65rem, 3vw, 2.45rem);
+  letter-spacing: -0.045em;
+  line-height: 1.1;
+  margin: 0.6rem 0;
+}
+.copilot-lead h2 em {
+  font-style: normal;
+  color: #527341;
+}
+.copilot-lead p {
+  max-width: 55ch;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.copilot-form {
+  align-self: center;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.2rem;
+  min-width: 0;
+}
+.copilot-form summary {
+  padding: 0.25rem 0;
+}
+.copilot-form textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 100px;
+  max-height: 550px;
+  font: inherit;
+  border: 1px solid #b7c8b4;
+  border-radius: 8px;
+  padding: 10px;
+  color: var(--ink);
+  background: white;
+  box-sizing: border-box;
+}
+.copilot-form label {
+  display: block;
+  margin: 0.85rem 0 0.4rem;
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+.copilot-form .consent {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  line-height: 1.6;
+  font-weight: 400;
+}
+.copilot-form .consent input {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.key-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.key-row input {
+  min-width: 0;
+  flex: 1;
+}
+.journey {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+.journey b {
+  display: inline-flex;
+  padding: 0.3rem;
+  background: #d4e6b8;
+  border-radius: 5px;
+  margin-right: 0.3rem;
+}
+#copilot-status {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+#ai-draft-json {
+  font: 12px/1.6 monospace;
+}
+@media (max-width: 800px) {
+  .copilot-panel {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+  .key-row {
+    flex-wrap: wrap;
+  }
+  .copilot-lead h2 {
+    font-size: 1.85rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .copilot-panel * {
+    scroll-behavior: auto;
+  }
+}

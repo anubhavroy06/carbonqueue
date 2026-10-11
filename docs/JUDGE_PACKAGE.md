@@ -34,24 +34,24 @@ A longer demo may inspect interval tables, workspaces, backup import/rollback an
 | Demo            | edit → real computation → contradiction → verified counterfactual → offline export              | public HTTPS and offline/Live/export checks passed       |
 | Implementation  | solver/verifier/Worker race guards, persistence rollback, offline updates, tested failure paths | finite bounded model; no global optimality on timeout               |
 
-Target Best Overall, Best Pitch/Demo and Best Environment conditionally. Eligibility is participant-confirmed. Do not assume award stacking, cash payout availability or official criterion weights. No sponsor badge/integration is claimed; each optional sponsor API would add cost/scope without improving the required planning core.
+Target Best Overall, Best Pitch/Demo and Best Environment conditionally. Eligibility is participant-confirmed. Do not assume award stacking, cash payout availability or official criterion weights. The optional Gemini workflow drafting integration is implemented but actual successful model generation remains unverified pending a user key. Do not claim Gemini prize eligibility until a real call and meaningful demonstration are verified. No dummy sponsor badges or unrelated APIs are added.
 
 ## Ten defensible answers
 
 1. **Is scheduling new?** No. Carbon Aware SDK/CaWoSched are prior art. Differentiate this diagnostic/evidence workflow, not first-ever mathematics.
-2. **Is AI required?** No. Hard constraints need deterministic verification, not fluent guesses. AI coding assistance is disclosed.
+2. **Is AI required?** No. Hard constraints need deterministic verification, not fluent guesses. Optional Gemini drafts task inputs only, with explicit human approval. AI coding assistance is disclosed.
 3. **Are these measured savings?** No. Same energy and forecast-average intensity produce a modeled difference, not marginal avoided emissions.
 4. **Why GB?** Live NESO coverage is GB. Controller residence differs from compute location; no unsupported country substitution.
 5. **Is the plan optimal?** Only when discrete search exhausts. Otherwise verified best-found or unknown.
 6. **What proves validity?** Independent task/resource/precedence/window/arithmetic checks; small exact tests use a separate reference.
 7. **What if data fails?** Explicit replay, visible timestamps, bounded timeout/cooldown. Never silently turn an old response into Live.
 8. **Is infeasibility always explained?** Only sound certificates or exhausted finite search support that status; timeout never does.
-9. **Is it zero cost?** Local compute, keyless currently-free API, static deployment path; no billing, tokens, paid domain/database. Existing equipment/network and hosting account access are assumptions.
+9. **Is it zero cost?** Local compute, keyless currently-free API, static deployment path; no mandatory inference, paid domain/database. Optional Gemini tokens require a user-confirmed free-project key; paid-project charges cannot be prevented by CarbonQueue. Existing equipment/network and hosting account access are assumptions.
 10. **What does completion mean?** The declared planner features are implemented. Remote release verification is documented in TEST_REPORT.md; it does not prove a submitted hackathon entry.
 
 ## Submission description (truthful template)
 
-CarbonQueue is a local-first workflow planner that makes flexible-compute timing constraints visible. Define up to six non-preemptive tasks on two fixed resources, load real GB forecast data or attributed replay, and compare an independently verified carbon-aware schedule with a valid earliest-start baseline. Tighten a deadline to see a checkable structural contradiction, inspect counterfactual/sensitivity scenarios, and export a reproducible evidence packet. Everything except explicit forecast refresh runs in the browser, including offline solving and local backup/recovery. Its technical core is bounded discrete search plus separate schedule/proof verification—not a mandatory LLM. Footprints use assumed kWh and average forecast gCO2/kWh; no measured avoided-emission or optimality-on-timeout claim is made. AI assistance was used for code, tests and documentation; the participant must understand and accurately disclose the tools actually used.
+CarbonQueue is a local-first workflow planner that makes flexible-compute timing constraints visible. Define up to six non-preemptive tasks on two fixed resources, load real GB forecast data or attributed replay, and compare an independently verified carbon-aware schedule with a valid earliest-start baseline. Tighten a deadline to see a checkable structural contradiction, inspect counterfactual/sensitivity scenarios, and export a reproducible evidence packet. Core solving and local backup/recovery run in the browser, including offline. Optional Gemini input drafting uses a bounded Cloudflare proxy with a session-only user key; human review is mandatory and no model result is trusted as a schedule or certificate. Its technical core is bounded discrete search plus separate schedule/proof verification—not a mandatory LLM. Footprints use assumed kWh and average forecast gCO2/kWh; no measured avoided-emission or optimality-on-timeout claim is made. AI assistance was used for code, tests and documentation; the participant must understand and accurately disclose the tools actually used.
 
 ## Submission checklist
 
@@ -62,3 +62,6 @@ CarbonQueue is a local-first workflow planner that makes flexible-compute timing
 - [ ] Required track-specific entry fields and award/stacking rules checked.
 - [ ] Submission made only with separate participant authorization; confirmation saved.
 - [ ] No public file/API secrets, fake customers/results or unsupported environmental claims.
+
+## Optional copilot demo (only after an actual provider call is verified)
+Describe a nonprivate workflow with explicit illustrative kWh → generate one draft with a free-project key → review every assumption and edit → approve replacement → analyze with the real solver/verifier → forget key. If no real provider success was tested, demonstrate the core planner and label copilot success tests mocked rather than faking a live call.

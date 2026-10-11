@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-11T14:52:10.555Z",
+  "verifiedAt": "2026-10-11T15:29:46.181Z",
   "url": "https://carbonqueue.pages.dev",
-  "version": "1.0.1",
-  "buildHash": "ed81c53bfabca2cd5db584afdc66c42afa72fba21b46f3fbfce460e60b3baf93",
+  "version": "1.1.0",
+  "buildHash": "45ea64fb53ab44c69b6b46d22f9e826b93247a8870c9ce9b529ce3f4621caa88",
   "checked": [
     {
       "file": "LICENSE.txt",
@@ -13,7 +13,13 @@
     {
       "file": "app.js",
       "status": 200,
-      "bytes": 63603,
+      "bytes": 64771,
+      "hashMatches": true
+    },
+    {
+      "file": "copilot.js",
+      "status": 200,
+      "bytes": 9706,
       "hashMatches": true
     },
     {
@@ -49,7 +55,7 @@
     {
       "file": "index.html",
       "status": 200,
-      "bytes": 2614,
+      "bytes": 2638,
       "hashMatches": true
     },
     {
@@ -67,7 +73,7 @@
     {
       "file": "styles.css",
       "status": 200,
-      "bytes": 11423,
+      "bytes": 13609,
       "hashMatches": true
     },
     {
@@ -77,5 +83,9 @@
       "hashMatches": true
     }
   ],
-  "serviceWorkerControlled": true
+  "serverFiles": {
+    "_worker.js": "243bbf3787e25ebfe3e42a11ceeebf994d2fe6cb79f84704186c1fd88ad15755",
+    "_routes.json": "969337f100313a704668abfa4462f798ee00e25504814fc1986ccafebbf2b4e5",
+    "_headers": "d85ff92dca3639a83180d4fed4f6dfe8ca8913608d09d1606ce542ad129ca9c6"
+  }
 }

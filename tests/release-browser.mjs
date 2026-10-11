@@ -266,7 +266,7 @@ try {
   await writeFile(
     "dist/sw.js",
     swOriginal.replace(
-      /carbonqueue-1\.0\.\d+-[a-f0-9]+/,
+      /carbonqueue-1\.\d+\.\d+-[a-f0-9]+/,
       "carbonqueue-update-test",
     ),
   );

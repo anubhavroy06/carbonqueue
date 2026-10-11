@@ -51,8 +51,9 @@ try {
   assert.equal(headers["referrer-policy"], "no-referrer");
   check("Anonymous HTTPS and deployed security headers", response.status()+"; CSP/Worker policy/nosniff/referrer passed");
   const release = await page.evaluate(async()=>await (await fetch('./release.json')).json());
-  assert.equal(release.version,'1.0.1');
-  assert.equal(release.buildHash,'ed81c53bfabca2cd5db584afdc66c42afa72fba21b46f3fbfce460e60b3baf93');
+  const expectedRelease=JSON.parse(await readFile('dist/release.json','utf8'));
+  assert.equal(release.version,expectedRelease.version);
+  assert.equal(release.buildHash,expectedRelease.buildHash);
   check("Hosted version and build identity match verified source");
   await page.locator("h1").waitFor();
   check("Cold production load", Date.now() - began + " ms");

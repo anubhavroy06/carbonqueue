@@ -1,54 +1,22 @@
-# Release checklist and feature/test traceability
+# Release checklist and traceability — 1.1.0
 
-Status: **VERIFIED COMPLETE** for the bounded planner release. Public source and anonymous hosted verification are complete. Hackathon entry is not submitted.
+Status: **IMPLEMENTED — VERIFICATION INCOMPLETE**. The original bounded planner contract passed current local and hosted regression checks. New optional copilot integration is implemented; actual Gemini successful request is the outstanding verification gate.
 
-Domain tests execute in Node; browser tests execute against the production static build in local Chromium. JSON logs identify actual checks, not promises. No remaining application requirement is relegated to a roadmap.
+| Contract | Implementation | Executed evidence |
+|---|---|---|
+| Six tasks/two resources, CRUD, DAG, slot/UTC validation, Undo | domain.ts/app.js | 20 domain groups, core browser suites |
+| Live GB/replay/custom, raw provenance, cache/error/freshness | domain.ts/app.js | actual hosted NESO plus labeled mocked failure/normalization tests |
+| Baseline/bounded search/honest status/cancel/stale messages | domain.ts/worker.ts/app.js | 100 seeded independent references, fault and contract browser tests |
+| Independent validity/objective/certificates | separate verifier/checkCertificate | tamper, cycle/path/window/resource checks |
+| What-if/sensitivity/three-scenario comparison | app.js/domain.ts | local and hosted real UI recomputation |
+| Local persistence/backup/transaction/recovery | storage.js/app.js | storage unavailable/quota/corruption and backup tests |
+| Evidence JSON/human report/import recheck/time context | domain.ts/app.js | browser Blob download/reimport and domain tamper tests |
+| Offline lifecycle/safe update/root/subpath | sw.js/build.mjs | local controlled update, root/subpath; hosted install/offline reload |
+| Mobile/keyboard/accessible alternatives/no placeholders | index/styles/app/copilot | 89 local/51 hosted checks, zero reported axe violations in tested states |
+| Secure optional BYOK/backend | _worker.js/copilot.js/_routes.json | 14 gateway groups, 14 local/16 hosted copilot checks |
+| Actual successful Gemini generation | same gateway/provider | **PENDING user-provided free-project key**; mocked success is not proof |
+| Hosted/source integrity | Cloudflare/GitHub | deployment, headers,13 asset hashes; clean public rebuild separate |
 
-| Contract                                              | Implemented evidence                                         | Verification                                                     |
-| ----------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Six tasks / two fixed resources / DAG / slots         | domain.ts, task/resource editor                              | domain generated-reference tests; browser six-task analysis      |
-| CRUD / duplication / safe reassignment / undo / reset | app.js editor handlers                                       | release-browser; keyboard deletion                               |
-| UTC/local inputs / unaligned rejection                | datetime conversion; strict interval validator               | domain time tests; editor error navigation                       |
-| Live GB / recorded replay / custom import             | frozen raw + normalized snapshots                            | actual browser Live check; failure + hardening suites            |
-| Forecast inspection / download / cache / throttling   | table/chart; explicit refresh; timeout and cooldown          | browser success, 429, malformed response, timeout                |
-| Baseline / bounded optimizer / honest statuses        | domain.ts and isolated Worker                                | independent exhaustive reference + 100 seeded cases              |
-| Independent schedule and proof checking               | verify and checkCertificate                                  | forged proof/status/unit tests                                   |
-| Cancellation / stale result / lifecycle               | terminate + run ID/fingerprint + watchdog                    | real long-search cancellation; forged Worker hardening           |
-| Carbon formula / units / equal work                   | objective + per-task table + methodology                     | zero-value, metamorphic, independent arithmetic tests            |
-| Start/finish/intensity explanations                   | movement table, constraints and avg active intensity         | visual review and browser workflow                               |
-| Deadline counterfactual                               | saved prior scenario; exact editor differences               | browser what-if, infeasible certificate, restored plan           |
-| Uniform + nonuniform sensitivity                      | transform; same-series counterfactual evaluation             | domain scaling and browser window scenarios                      |
-| Three+ scenarios and settings/source comparison       | comparison with exact changes and restored state             | browser save/import/restore + no unlike-work savings claims      |
-| Autosave / local records / backup merge/replace       | IndexedDB transaction and queued writes                      | main + failure suites                                            |
-| Bad records / blocked storage / quota / rollback      | recovery isolation and memory mode                           | release + hardening suites                                       |
-| Evidence JSON / report / independent reimport         | version + fingerprint + independent verifier                 | browser exports, domain tamper tests                             |
-| Offline shell / update / caches / subpaths            | hashed SW cache, update-confirmation/save                    | actual offline reload + update + subpath tests                   |
-| Accessible keyboard / mobile / charts                 | semantics, tables, labelled dialog, tab wrapping             | axe + keyboard + 390/640 pixel reflow                            |
-| Security / privacy / licenses                         | CSP, limits, escaped text, local-only workflows, MIT + CC BY | dependency audit, injection test, production CSP checks          |
-| Cost / release / demo documentation                   | docs, static-only build                                      | dependency audit; bounded workload estimates                     |
-| Actual public release                                 | **VERIFIED**                                             | Cloudflare production; hosted suites and asset hashes passed |
+No core implementation is deferred to a roadmap. Model boundaries remain explicit: no workload execution, metering, global regions, carbon certification or statistical savings guarantee. New optional provider capability does not change the deterministic solver's authority.
 
-## Release gate and separate submission action
-
-- [x] Application features implemented and locally exercised.
-- [x] Required 100 generated correctness cases executed.
-- [x] Type checking, syntax/unsafe-evaluation checks, production build.
-- [x] Browser, accessibility, offline, recovery and security checks.
-- [x] Documentation, versioned static files and source package.
-- [x] Authorized public source repository.
-- [x] Authorized free HTTPS hosting.
-- [x] Actual public-domain CSP/assets/Worker/Live/offline/export/mobile smoke test.
-- [ ] Repository + website links entered in the submission (only separately authorized).
-
-The actual public release passed. A hosted release is not an entry submission; submission remains separately authorized.
-
-## Audit regression coverage (1.0.1)
-
-- Explicit UTC/local time context, tamper rejection and legacy packet compatibility.
-- Cancellation during validation; Worker startup/crash recovery; stale-result rejection.
-- Unique saved record IDs and duplicate-ID backup normalization.
-- Scenario settings restoration and honest memory-only clearing.
-- Cycle certificates, maximum-name handling, bounded transient API retries.
-- Empty numerical/time errors, recoverable rendering and focus into closed disclosures.
-
-See contract-results.json and the executed TEST_REPORT.md.
+Hackathon submission/video/payout/award-stacking are participant/event actions, not falsely checked as complete.

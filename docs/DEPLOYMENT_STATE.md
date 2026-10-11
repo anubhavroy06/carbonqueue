@@ -1,16 +1,14 @@
 # Current deployment state
 
-**VERIFIED COMPLETE — CarbonQueue 1.0.1**
+CarbonQueue **1.1.0**, deployed 3dcccd80-7b1f-48d4-a5bc-cf334996210e, successful at 2026-10-11T15:27:58Z.
 
 Website: https://carbonqueue.pages.dev
-Public repository: https://github.com/anubhavroy06/carbonqueue
-Production deployment: 1061000e-4271-48b5-b917-07adf44a5380
-Verified: 2026-10-11T14:52:10.555Z
+Immutable deployment: https://3dcccd80.carbonqueue.pages.dev
+Public source: https://github.com/anubhavroy06/carbonqueue
+Build: `45ea64fb53ab44c69b6b46d22f9e826b93247a8870c9ce9b529ce3f4621caa88`
 
-Cloudflare Pages Direct Upload, static-only; no Functions, analytics, paid domain or secrets. Main branch holds reviewed source, test suite, pinned dependency lockfile, binary icons and documentation. No node_modules, private backups, duplicate dist folder or generated user workflow is published.
+Actual hosted planner, Live NESO, replay/offline, headers/assets and gateway health/missing-key refusal checked. Optional actual Gemini success remains unverified pending user key. Overall upgrade status: **IMPLEMENTED — VERIFICATION INCOMPLETE**.
 
-Initial MCP write/upload authorization errors were worked around through the authorized authenticated browser interfaces. They are resolved operationally for this release; do not mistake their historical errors for a current publication blocker. Source is not automatically linked to Pages: build and explicitly deploy each intended release.
+Pages Direct Upload, advanced-mode `_worker.js` for `/api/*` only; static core excluded from function invocations by `_routes.json`. Account Workers Free confirmed Current plan in dashboard; no paid upgrade, purchased domain, database, billing change or master server key. Source uploads use authorized browser interfaces where MCP write/asset authorization is insufficient. Source pushes do not auto-deploy.
 
-Public HTTPS, security headers, manifest assets, Worker, actual Live refresh, offline reload/recomputation/export, evidence reimport, storage/recovery, mobile and keyboard paths passed. See TEST_REPORT.md.
-
-Hackathon entry was not submitted and requires separate participant authorization.
+Rollback retained: source tag v1.0.1 and Cloudflare deployment 1061000e-4271-48b5-b917-07adf44a5380. Do not delete it. Hackathon entry not submitted.

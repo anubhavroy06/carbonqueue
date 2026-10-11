@@ -52,6 +52,7 @@ try {
     "keyboard",
     "hardening-browser",
     "contract-browser",
+    "copilot-browser",
   ])
     await run(process.execPath, ["tests/" + file + ".mjs"]);
   await run(process.execPath, ["scripts/measure.mjs"]);

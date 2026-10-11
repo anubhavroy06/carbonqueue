@@ -1,4 +1,4 @@
-const VERSION = "carbonqueue-1.0.1";
+const VERSION = "carbonqueue-1.1.0";
 const ASSETS = /*ASSETS*/ [];
 self.addEventListener("install", (event) =>
   event.waitUntil(caches.open(VERSION).then((c) => c.addAll(ASSETS))),
@@ -22,7 +22,7 @@ self.addEventListener("message", (e) => {
 });
 self.addEventListener("fetch", (event) => {
   const u = new URL(event.request.url);
-  if (event.request.method !== "GET" || u.origin !== self.location.origin)
+  if (event.request.method !== "GET" || u.origin !== self.location.origin || u.pathname.includes("/api/"))
     return;
   event.respondWith(
     caches.open(VERSION).then(async (c) => {

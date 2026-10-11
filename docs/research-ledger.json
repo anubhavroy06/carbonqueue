@@ -115,5 +115,41 @@
     "evidence_type": "Loaded docs",
     "claim": "Drag/drop, pages.dev, upload limits",
     "limitation": "No deployment performed"
+  },
+  {
+    "id": "UPGRADE1",
+    "url": "https://ai.google.dev/gemini-api/docs/pricing",
+    "publisher": "Google",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Inspected first-party documentation",
+    "claim": "Optional Gemini structured drafting/security/pricing or Pages advanced-mode Direct Upload/routing/pricing; see UPGRADE_1_1",
+    "limitation": "Documentation not a live provider-key test; account limits/access differ"
+  },
+  {
+    "id": "UPGRADE2",
+    "url": "https://ai.google.dev/gemini-api/docs/api-key",
+    "publisher": "Google",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Inspected first-party documentation",
+    "claim": "Optional Gemini structured drafting/security/pricing or Pages advanced-mode Direct Upload/routing/pricing; see UPGRADE_1_1",
+    "limitation": "Documentation not a live provider-key test; account limits/access differ"
+  },
+  {
+    "id": "UPGRADE3",
+    "url": "https://ai.google.dev/api/generate-content",
+    "publisher": "Google",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Inspected first-party documentation",
+    "claim": "Optional Gemini structured drafting/security/pricing or Pages advanced-mode Direct Upload/routing/pricing; see UPGRADE_1_1",
+    "limitation": "Documentation not a live provider-key test; account limits/access differ"
+  },
+  {
+    "id": "UPGRADE5",
+    "url": "https://developers.cloudflare.com/pages/functions/advanced-mode/",
+    "publisher": "Cloudflare",
+    "retrieval_date": "2026-10-11",
+    "evidence_type": "Inspected first-party documentation",
+    "claim": "Optional Gemini structured drafting/security/pricing or Pages advanced-mode Direct Upload/routing/pricing; see UPGRADE_1_1",
+    "limitation": "Documentation not a live provider-key test; account limits/access differ"
   }
 ]

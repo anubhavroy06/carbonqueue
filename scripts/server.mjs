@@ -1,3 +1,4 @@
+import { handle } from "../public/_worker.js";
 import http from "node:http";
 import { readFile, stat } from "node:fs/promises";
 import path from "node:path";
@@ -24,6 +25,33 @@ http
         return res.end("Not found");
       }
       pathname = pathname.slice(base.length);
+      if (pathname.startsWith("/api/")) {
+        const origin = "http://" + req.headers.host;
+        const chunks = [];
+        let size = 0;
+        for await (const c of req) {
+          size += c.length;
+          if (size > 16000) {
+            res.writeHead(413);
+            return res.end("Too large");
+          }
+          chunks.push(c);
+        }
+        const body = Buffer.concat(chunks);
+        const response = await handle(
+          new Request(origin + pathname, {
+            method: req.method,
+            headers: req.headers,
+            ...(req.method === "GET" || req.method === "HEAD" ? {} : { body }),
+          }),
+        );
+        res.writeHead(response.status, Object.fromEntries(response.headers));
+        return res.end(Buffer.from(await response.arrayBuffer()));
+      }
+      if (pathname === "/_worker.js" || pathname === "/_routes.json") {
+        res.writeHead(404);
+        return res.end("Not found");
+      }
       let target = path.resolve(root, "." + pathname);
       if (target !== root && !target.startsWith(root + path.sep)) {
         res.writeHead(403);

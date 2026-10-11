@@ -1,20 +1,19 @@
 {
-  "version": "1.0.1",
-  "status": "VERIFIED COMPLETE",
-  "verifiedAt": "2026-10-11T14:52:10.555Z",
-  "buildHash": "ed81c53bfabca2cd5db584afdc66c42afa72fba21b46f3fbfce460e60b3baf93",
-  "domainGroupsPassed": 20,
-  "seededCases": 100,
-  "localBrowserChecks": 75,
-  "hostedExecutedChecks": 35,
-  "hostedAdditionalInformationalRecords": 1,
-  "axeViolationsOnTestedScreens": 0,
-  "knownAdvisoriesAtLocalInspection": 0,
-  "bundleBytes": 133541,
-  "publicDeployment": "VERIFIED",
-  "repository": "https://github.com/anubhavroy06/carbonqueue",
-  "website": "https://carbonqueue.pages.dev",
-  "deploymentId": "1061000e-4271-48b5-b917-07adf44a5380",
-  "usesFunctions": false,
-  "hackathonSubmission": "NOT SUBMITTED \u2014 SEPARATE AUTHORIZATION REQUIRED"
+  "version": "1.1.0",
+  "status": "IMPLEMENTED \u2014 VERIFICATION INCOMPLETE",
+  "assembledAt": "2026-10-11T15:25:46.629734+00:00",
+  "buildHash": "45ea64fb53ab44c69b6b46d22f9e826b93247a8870c9ce9b529ce3f4621caa88",
+  "url": "https://carbonqueue.pages.dev",
+  "deployment": "3dcccd80-7b1f-48d4-a5bc-cf334996210e",
+  "usesFunctions": true,
+  "functionRoutes": [
+    "/api/*"
+  ],
+  "nodeGroups": 34,
+  "seededReferenceCases": 100,
+  "localBrowserChecks": 89,
+  "hostedBrowserChecks": 51,
+  "liveGeminiVerified": false,
+  "sourcePublication": "pending current commit verification",
+  "submission": "not submitted"
 }
